@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades</title>
+    <link rel="stylesheet" href="studentGradesSystem.css">
+</head>
+<body>
+    <h1>Student	Grades Table</h1>
+    <div class="grades-table">
+        <button id="save-button">Save</button>
+        <button id="add-student-btn">Insert</button>
+        <button id="add-assignment-btn">Add Assignment</button>
+
+        <table>
+            <thead>
+                <tr class="firstHead">
+                    <th rowspan="2">Student Name</th>
+                    <th rowspan="2">Student ID</th>
+                    <th colspan="5">Assignment Results</th>
+                    <th rowspan="2">Average(%)</th>
+                </tr>
+                <tr class="secondHead">
+                    <th>Assignment 1</th>
+                    <th>Assignment 2</th>
+                    <th>Assignment 3</th>
+                    <th>Assignment 4</th>
+                    <th>Assignment 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td ID="scores" contenteditable="true">-</td>
+                    <td ID="scores" contenteditable="true">-</td>
+                    <td ID="scores" contenteditable="true">-</td>
+                    <td ID="scores" contenteditable="true">-</td>
+                    <td ID="scores" contenteditable="true">-</td>
+                    <td><span id="average"></span></td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <div id="unsubmitted-container">Unsubmitted assignments: <span id="unsubmitted-count">0</span></div>
+        <button id="submit-data-btn">Submit</button>
+        <button id="retrieve-data-btn">Retrieve Data</button>
+    </div>
+
+    <script src="studentGradesSystem.js"></script>
+</body>
+</html>
